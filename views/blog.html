@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | info_Soft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .active-category {
+            background-color: #2563eb;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="logo text-2xl font-bold text-blue-400">SoftPyme</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/index.html" class="smooth-scroll">Inicio</a>
+                <a href="/views/services.html" class="smooth-scroll">Servicios</a>
+                <a href="/views/about.html" class="smooth-scroll">Sobre Nosotros</a>
+                <a href="/views/contact.html" class="smooth-scroll">Contacto</a>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 transform hover:scale-105">
+                    Solicita una Demo
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu hidden fixed inset-0 bg-gray-900 z-40 pt-20">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex flex-col space-y-4 text-xl">
+                    <a href="/index.html" class="smooth-scroll py-2 border-b border-gray-800">Inicio</a>
+                    <a href="/views/services.html" class="smooth-scroll py-2 border-b border-gray-800">Servicios</a>
+                    <a href="/views/about.html" class="smooth-scroll py-2 border-b border-gray-800">Sobre Nosotros</a>
+                    <a href="/views/contact.html" class="smooth-scroll py-2 border-b border-gray-800">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Header -->
+    <section class="bg-cover bg-center py-32" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/blog.png')">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Blog</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Artículos y noticias sobre tecnología, diseño y marketing digital</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <!-- Categories Filter -->
+            <div class="flex flex-wrap gap-2 mb-12 justify-center">
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all active-category" data-category="all">
+                    Todos
+                </button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all" data-category="tecnologia">
+                    Tecnología
+                </button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all" data-category="diseno">
+                    Diseño
+                </button>
+                <button class="category-filter px-4 py-2 rounded-full bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white transition-all" data-category="marketing">
+                    Marketing
+                </button>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-posts">
+                <!-- Post 1 -->
+                <div class="blog-post bg-gray-900 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300" data-category="tecnologia">
+                    <img src="/assets/blog1.jpg" alt="Tendencias en Desarrollo Web" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <span>15 Mayo 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Tecnología</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Tendencias en Desarrollo Web 2024</h3>
+                        <p class="text-gray-400 mb-4">Exploramos las últimas tendencias que están dando forma al desarrollo web este año.</p>
+                        <a href="https://tuatara.co/blog/software/tendencias-desarrollo-web-2024/?utm_source=chatgpt.com" class="text-blue-400 hover:underline">Leer más →</a>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="blog-post bg-gray-900 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300" data-category="marketing">
+                    <img src="/assets/blog2.jpg" alt="Marketing Digital" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <span>2 Abril 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Marketing</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Estrategias de Marketing Digital</h3>
+                        <p class="text-gray-400 mb-4">Cómo crear una estrategia efectiva para tu negocio en línea.</p>
+                        <a href="https://www.aden.org/business-magazine/marketing-digital-5-estrategias-claves-para-2024/?utm_source=chatgpt.com" class="text-blue-400 hover:underline">Leer más →</a>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="blog-post bg-gray-900 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300" data-category="diseno">
+                    <img src="/assets/blog3.png" alt="Diseño UI/UX" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <span>20 Marzo 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Diseño</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Principios de Diseño UI/UX</h3>
+                        <p class="text-gray-400 mb-4">Los fundamentos para crear experiencias de usuario excepcionales.</p>
+                        <a href="https://ucamp.io/repositorio/uploads/2023/03/UPlan-Fundamentos-Disen-UXUI-2023_compressed.pdf?utm_source=chatgpt.com" class="text-blue-400 hover:underline">Leer más →</a>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="blog-post bg-gray-900 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300" data-category="tecnologia">
+                    <img src="/assets/blog4.png" alt="Aplicaciones Móviles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <span>10 Marzo 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Tecnología</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Desarrollo de Aplicaciones Móviles</h3>
+                        <p class="text-gray-400 mb-4">Guía completa para crear aplicaciones móviles exitosas.</p>
+                        <a href="https://bambu-mobile.com/tecnologias-usadas-para-el-desarrollo-de-apps-2024/?utm_source=chatgpt.com" class="text-blue-400 hover:underline">Leer más →</a>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="blog-post bg-gray-900 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300" data-category="marketing">
+                    <img src="/assets/blog5.jpg" alt="SEO" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <span>28 Octubre 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Marketing</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">SEO para 2025: Lo Que Necesitas Saber</h3>
+                        <p class="text-gray-400 mb-4">Las últimas actualizaciones y mejores prácticas para SEO.</p>
+                        <a href="https://www.seo-kueche.de/blog/seo-2025-die-wichtigsten-trends-fuer-die-zukunft-der-suchmaschinenoptimierung/?utm_source=chatgpt.com" class="text-blue-400 hover:underline">Leer más →</a>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="blog-post bg-gray-900 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300" data-category="diseno">
+                    <img src="/assets/blog6.jpg" alt="Diseño Web" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-400 mb-2">
+                            <span>15 Diciembre 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>Diseño</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Diseño Web Responsivo</h3>
+                        <p class="text-gray-400 mb-4">Cómo crear sitios web que se vean bien en todos los dispositivos.</p>
+                        <a href="https://kinsta.com/es/blog/diseno-de-paginas-web-sensibles/?utm_source=chatgpt.com" class="text-blue-400 hover:underline">Leer más →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex items-center space-x-2">
+                    <button class="px-4 py-2 rounded bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white">&laquo;</button>
+                    <button class="px-4 py-2 rounded bg-blue-600 text-white">1</button>
+                    <button class="px-4 py-2 rounded bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white">2</button>
+                    <button class="px-4 py-2 rounded bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white">3</button>
+                    <button class="px-4 py-2 rounded bg-gray-700 text-gray-300 hover:bg-blue-600 hover:text-white">&raquo;</button>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">softpyme</h3>
+                    <p>Innovando soluciones digitales desde 2024.</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Enlaces</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="hover:text-blue-400">Inicio</a></li>
+                        <li><a href="/views/services.html" class="hover:text-blue-400">Servicios</a></li>
+                        <li><a href="/views/about.html" class="hover:text-blue-400">Sobre Nosotros</a></li>
+                        <li><a href="/views/contact.html" class="hover:text-blue-400">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Bogota, Colombia</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 317 6770500</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 301 2440144</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 301 6234525</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info_Soft@softpyme.com</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Suscribete para mas informacion</h3>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Tu email" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-400">
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>© SoftPyme. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

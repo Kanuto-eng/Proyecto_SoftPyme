@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional website for modern business solutions">
+    <title>SoftPyme </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .smooth-scroll {
+            transition: all 0.3s ease;
+        }
+        .smooth-scroll:hover {
+            color: #60a5fa;
+        }
+    </style>
+</head>
+<body>
+     <!-- Header -->
+     <header class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="logo text-2xl font-bold text-blue-400">SoftPyme</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/index.html" class="smooth-scroll">Inicio</a>
+                <a href="/views/services.html" class="smooth-scroll">Servicios</a>
+                <a href="/views/about.html" class="smooth-scroll">Sobre Nosotros</a>
+                <a href="/views/contact.html" class="smooth-scroll">Contacto</a>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 transform hover:scale-105">
+                    Solicita una Demo
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu hidden fixed inset-0 bg-gray-900 z-40 pt-20">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex flex-col space-y-4 text-xl">
+                    <a href="/index.html" class="smooth-scroll py-2 border-b border-gray-800">Inicio</a>
+                    <a href="/views/services.html" class="smooth-scroll py-2 border-b border-gray-800">Servicios</a>
+                    <a href="/views/about.html" class="smooth-scroll py-2 border-b border-gray-800">Sobre Nosotros</a>
+                    <a href="/views/contact.html" class="smooth-scroll py-2 border-b border-gray-800">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">Sobre Nosotros</h2>
+        <p class="text-gray-300 max-w-3xl mx-auto mb-8">
+            En <span class="text-blue-400 font-semibold">SoftPyme</span>, nos especializamos en la creación de soluciones digitales innovadoras para empresas de todos los tamaños. Nuestro equipo de expertos en desarrollo web, aplicaciones móviles y estrategias digitales está comprometido en transformar ideas en productos de alto impacto.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Misión -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-400 mb-3">Nuestra Misión</h3>
+                <p class="text-gray-300">Empoderar a las empresas con tecnología de vanguardia, ofreciendo soluciones eficientes y escalables para su transformación digital.</p>
+            </div>
+            <!-- Visión -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-400 mb-3">Nuestra Visión</h3>
+                <p class="text-gray-300">Ser líderes en el desarrollo de software a nivel global, impulsando la innovación y el crecimiento empresarial a través de la tecnología.</p>
+            </div>
+            <!-- Valores -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-400 mb-3">Nuestros Valores</h3>
+                <p class="text-gray-300">Innovación, compromiso, calidad y transparencia son los pilares que nos guían en cada proyecto.</p>
+            </div>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Experiencia -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-400 mb-3">Nuestra Experiencia</h3>
+                <p class="text-gray-300">Contamos con más de 10 años en el sector, desarrollando soluciones tecnológicas para empresas de diversas industrias, desde startups hasta grandes corporaciones.</p>
+            </div>
+            <!-- Nuestro Equipo -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-blue-400 mb-3">Nuestro Equipo</h3>
+                <p class="text-gray-300">Un grupo de profesionales altamente capacitados en diseño, desarrollo y estrategias digitales, comprometidos con la excelencia y la satisfacción del cliente.</p>
+            </div>
+        </div>
+        <div class="mt-12">
+            <a href="/views/contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium transition-all duration-300 transform hover:scale-105">
+                Contáctanos
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">softpyme</h3>
+                    <p>Innovando soluciones digitales desde 2024.</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Enlaces</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="hover:text-blue-400">Inicio</a></li>
+                        <li><a href="/views/services.html" class="hover:text-blue-400">Servicios</a></li>
+                        <li><a href="/views/about.html" class="hover:text-blue-400">Sobre Nosotros</a></li>
+                        <li><a href="/views/contact.html" class="hover:text-blue-400">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Bogota, Colombia</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 317 6770500</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 301 2440144</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 301 6234525</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info_Soft@softpyme.com</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Suscribete para mas informacion</h3>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Tu email" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-400">
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>© SoftPyme. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

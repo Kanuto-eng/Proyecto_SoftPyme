@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional website for modern business solutions">
+    <title>SoftPyme </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .smooth-scroll {
+            transition: all 0.3s ease;
+        }
+        .smooth-scroll:hover {
+            color: #60a5fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="logo text-2xl font-bold text-blue-400">SoftPyme</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/index.html" class="smooth-scroll">Inicio</a>
+                <a href="/views/services.html" class="smooth-scroll">Servicios</a>
+                <a href="/views/about.html" class="smooth-scroll">Sobre Nosotros</a>
+                <a href="/views/contact.html" class="smooth-scroll">Contacto</a>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 transform hover:scale-105">
+                    Solicita una Demo
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu hidden fixed inset-0 bg-gray-900 z-40 pt-20">
+            <div class="container mx-auto px-4 py-6">
+                <nav class="flex flex-col space-y-4 text-xl">
+                    <a href="/index.html" class="smooth-scroll py-2 border-b border-gray-800">Inicio</a>
+                    <a href="/views/services.html" class="smooth-scroll py-2 border-b border-gray-800">Servicios</a>
+                    <a href="/views/about.html" class="smooth-scroll py-2 border-b border-gray-800">Sobre Nosotros</a>
+                    <a href="/views/contact.html" class="smooth-scroll py-2 border-b border-gray-800">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Main Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-4">Nuestros Servicios</h1>
+            <p class="text-xl text-gray-300 text-center mb-12 max-w-2xl mx-auto">Ofrecemos soluciones personalizadas para cada necesidad de tu negocio.</p>
+            
+            <!-- Services Tabs -->
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap border-b border-gray-700 mb-8">
+                    <button class="tab-button px-6 py-3 font-medium text-blue-400 border-b-2 border-blue-400" data-tab="web-development">Desarrollo Web</button>
+                    <button class="tab-button px-6 py-3 font-medium text-gray-400 hover:text-blue-400" data-tab="mobile-apps">Aplicaciones Móviles</button>
+                    <button class="tab-button px-6 py-3 font-medium text-gray-400 hover:text-blue-400" data-tab="digital-marketing">Marketing Digital</button>
+                </div>
+
+                <!-- Web Development Tab -->
+                <div id="web-development" class="tab-content active">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Desarrollo Web a Medida</h3>
+                            <p class="text-gray-400 mb-6">Creamos sitios web modernos y optimizados que se adaptan perfectamente a tus necesidades empresariales.</p>
+                            <ul class="space-y-3 text-gray-400">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Diseño responsivo para todos los dispositivos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Optimización SEO integrada</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Integración con sistemas de gestión de contenido</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="/assets/servive1.png" alt="Web Development" class="rounded-lg shadow-xl w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Apps Tab -->
+                <div id="mobile-apps" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Aplicaciones Móviles Nativas</h3>
+                            <p class="text-gray-400 mb-6">Desarrollamos aplicaciones móviles de alto rendimiento para iOS y Android que impulsan tu negocio.</p>
+                            <ul class="space-y-3 text-gray-400">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Desarrollo nativo para iOS y Android</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Integración con APIs y servicios backend</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Publicación en App Store y Google Play</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="/assets/servive2.png" alt="Mobile Apps" class="rounded-lg shadow-xl w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing Tab -->
+                <div id="digital-marketing" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Estrategias de Marketing Digital</h3>
+                            <p class="text-gray-400 mb-6">Maximizamos tu presencia online con estrategias personalizadas de marketing digital.</p>
+                            <ul class="space-y-3 text-gray-400">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>SEO y posicionamiento en buscadores</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Campañas de publicidad digital</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 mt-1 mr-2"></i>
+                                    <span>Gestión de redes sociales</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="/assets/servive3.png" alt="Digital Marketing" class="rounded-lg shadow-xl w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-6">¿Listo para llevar tu negocio al siguiente nivel?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos.</p>
+            <a href="/views/contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-medium inline-block hover:bg-gray-100 transition-all duration-300">
+                Contactar Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">softpyme</h3>
+                    <p>Innovando soluciones digitales desde 2024.</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Enlaces</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/index.html" class="hover:text-blue-400">Inicio</a></li>
+                        <li><a href="/views/services.html" class="hover:text-blue-400">Servicios</a></li>
+                        <li><a href="/views/about.html" class="hover:text-blue-400">Sobre Nosotros</a></li>
+                        <li><a href="/views/contact.html" class="hover:text-blue-400">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Bogota, Colombia</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 317 6770500</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 301 2440144</p>
+                    <p><i class="fas fa-phone mr-2"></i> +57 301 6234525</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info_Soft@softpyme.com</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-4">Suscribete para mas informacion</h3>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Tu email" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-400">
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>© SoftPyme. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
